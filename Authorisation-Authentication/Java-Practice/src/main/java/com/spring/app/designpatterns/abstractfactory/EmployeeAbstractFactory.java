@@ -1,0 +1,7 @@
+package com.spring.app.designpatterns.abstractfactory;
+
+abstract public class EmployeeAbstractFactory {
+
+	public  abstract  Employee createEmployeeObject();
+
+}

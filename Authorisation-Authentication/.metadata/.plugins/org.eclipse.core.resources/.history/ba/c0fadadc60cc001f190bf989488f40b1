@@ -1,0 +1,5 @@
+package com.spring.app.designpatterns.prototype.shallowcloning;
+
+public class MainClass {
+
+}

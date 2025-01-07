@@ -1,0 +1,24 @@
+package com.spring.app.designpatterns.prototype;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		
+		EntityClass entiry = new EntityClass();
+		entiry.setId(1);
+		entiry.loadData();
+		
+		System.err.println("entiry: "+entiry);
+		
+	try {
+		EntityClass newEntiry = (EntityClass) entiry.clone();
+		newEntiry.setId(2);
+		System.out.println("newEntiry; "+newEntiry);
+	} catch (CloneNotSupportedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		
+	}
+}

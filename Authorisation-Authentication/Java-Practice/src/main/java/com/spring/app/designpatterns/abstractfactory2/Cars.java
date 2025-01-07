@@ -1,0 +1,11 @@
+package com.spring.app.designpatterns.abstractfactory2;
+
+public interface Cars {
+
+	int getmilage();
+
+	String getCarTyoe();
+
+	double getCarPice();
+
+}

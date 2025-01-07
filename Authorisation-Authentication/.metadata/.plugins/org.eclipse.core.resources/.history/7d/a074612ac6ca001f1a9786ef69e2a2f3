@@ -1,0 +1,17 @@
+package com.spring.app.designpatterns.factory;
+
+public class Commerce  implements Student{
+
+	
+	public int getId() {
+	System.out.println("ID FOR COMMERCE STUNDENT");
+		return 13;
+	}
+
+	
+	public String name() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

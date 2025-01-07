@@ -1,0 +1,7 @@
+package com.spring.app.designpatterns.behavioural.observer;
+
+public interface ChannnelOwner {
+
+	void sendNotification();
+
+}

@@ -1,0 +1,24 @@
+package com.spring.app.designpatterns.abstractfactory2;
+
+public class Audi implements Cars{
+
+	@Override
+	public int getmilage() {
+		System.out.println("Mialge for Audi..!!!");
+		return 12;
+	}
+
+	@Override
+	public String getCarTyoe() {
+		System.out.println("Cartype for Audi..!!!");
+		return "SPORT";
+	}
+
+	@Override
+	public double getCarPice() {
+		System.out.println("Price for Audi...!!!");
+		return 2800000;
+	}
+
+
+}

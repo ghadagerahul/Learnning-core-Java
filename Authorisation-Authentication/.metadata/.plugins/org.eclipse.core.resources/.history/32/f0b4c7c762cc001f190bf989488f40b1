@@ -1,0 +1,59 @@
+package com.spring.app.designpatterns.prototype.deepcloning;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EntityClass implements Cloneable {
+
+	private String ipAddress;
+	private String impData;
+	private List<String> iteamsList = new ArrayList<>();
+
+	public void loadImpDate() {
+		impData = "Loadded very imp date";
+	}
+
+	public String getIpAddress() {
+		return ipAddress;
+	}
+
+	public String getImpDate() {
+		return impData;
+	}
+
+	public List<String> getIteamsList() {
+		return iteamsList;
+	}
+
+	public void setIpAddress(String ipAddress) {
+		this.ipAddress = ipAddress;
+	}
+
+	public void setImpDate(String impData) {
+		this.impData = impData;
+	}
+
+	public void setIteamsList(List<String> iteamsList) {
+		this.iteamsList = iteamsList;
+	}
+
+	@Override
+	public String toString() {
+		return "ProductClass [ipAddress=" + ipAddress + ", impData=" + impData + ", iteamsList=" + iteamsList + "]";
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		//Using this logic We are Achieving Deep cloning 
+		EntityClass entity = new EntityClass();
+		entity.setIpAddress(this.ipAddress);
+		entity.setImpDate(this.impData);
+
+		for (String s : this.getIteamsList()) {
+			entity.getIteamsList().add(s);
+		}
+
+		return entity;
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.spring.app.designpatterns.prototype.deepcloning;
+
+public class MainClass {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		System.out.println("Object Creation is Started..!!!!!");
+		EntityClass entiry = new EntityClass();
+		entiry.setId(1);
+		entiry.loadData();
+		
+		System.err.println("entiry: "+entiry);
+		
+	try {
+		EntityClass newEntiry = (EntityClass) entiry.clone();
+		
+		System.out.println("newEntiry; "+newEntiry);
+	} catch (CloneNotSupportedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		
+	}
+}

@@ -1,0 +1,39 @@
+package com.spring.app.designpatterns.prototype;
+
+import javax.swing.text.html.parser.Entity;
+
+public class EntityClass {
+
+	private int id;
+	private String data;
+
+	public int getId() {
+		return id;
+	}
+
+	public String getData() {
+		return data;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setData(String data) {
+		this.data = data;
+	}
+
+	@Override
+	public String toString() {
+		return "EntityClass [id=" + id + ", data=" + data + "]";
+	}
+
+	private EntityClass() {
+		
+	}
+	
+	
+	public void loadData() {
+		
+	}
+}

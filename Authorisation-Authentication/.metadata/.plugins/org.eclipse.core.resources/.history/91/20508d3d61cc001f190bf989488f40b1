@@ -1,0 +1,53 @@
+package com.spring.app.designpatterns.prototype.shallowcloning;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProductClass implements Cloneable {
+
+	private String ipAddress;
+	private String impData;
+	private List<String> iteamsList = new ArrayList<>();
+
+	
+	
+	public void loadImpDate() {
+		impData = "Loadded very imp date";
+	}
+
+	public String getIpAddress() {
+		return ipAddress;
+	}
+
+	public String getImpDate() {
+		return impData;
+	}
+
+	public List<String> getIteamsList() {
+		return iteamsList;
+	}
+
+	public void setIpAddress(String ipAddress) {
+		this.ipAddress = ipAddress;
+	}
+
+	public void setImpDate(String impData) {
+		this.impData = impData;
+	}
+
+	public void setIteamsList(List<String> iteamsList) {
+		this.iteamsList = iteamsList;
+	}
+
+	@Override
+	public String toString() {
+		return "ProductClass [ipAddress=" + ipAddress + ", impData=" + impData + ", iteamsList=" + iteamsList + "]";
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
+
+}

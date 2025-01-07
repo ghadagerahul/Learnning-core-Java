@@ -1,0 +1,63 @@
+package com.spring.app.designpatterns.builder;
+
+public class World {
+
+	private int id;
+	private String name;
+	private String address;
+	private String email;
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	private World() {
+
+	}
+
+	static class WorldBuilder {
+
+		private int id;
+		private String name;
+		private String address;
+		private String email;
+
+		public void setId(int id) {
+			this.id = id;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public WorldBuilder setAddress(String address) {
+			this.address = address;
+			return this;
+		}
+
+		public WorldBuilder setEmail(String email) {
+			this.email = email;
+			return this;
+		}
+
+		WorldBuilder build() {
+		
+			return new WorldBuilder();
+			
+		}
+		
+	}
+
+}

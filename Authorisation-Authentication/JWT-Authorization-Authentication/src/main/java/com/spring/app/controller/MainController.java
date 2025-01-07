@@ -1,0 +1,15 @@
+package com.spring.app.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MainController {
+
+	@GetMapping("/Login")
+	public String getLogin() {
+
+		return "login success..!!";
+	}
+
+}

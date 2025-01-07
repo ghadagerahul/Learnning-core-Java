@@ -1,0 +1,7 @@
+package com.spring.app.designpatterns.prototype;
+
+public class MainClass {
+
+	EntityClass entityClass = new EntityClass();
+
+}

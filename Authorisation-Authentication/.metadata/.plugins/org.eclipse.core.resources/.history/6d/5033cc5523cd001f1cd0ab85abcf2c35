@@ -1,0 +1,12 @@
+package com.spring.app.designpatterns.behavioural.observer;
+
+import java.nio.channels.Channel;
+
+public class MainClass {
+
+	
+	ChannnelOwnerImpl channel = new ChannnelOwnerImpl();
+	
+	channel.
+	
+}

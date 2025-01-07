@@ -1,0 +1,21 @@
+package com.spring.app.designpatterns.prototype.shallowcloning;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+
+		ProductClass prodClass = new ProductClass();
+		System.out.println("prodClass: " + prodClass);
+
+		
+		
+		
+		try {
+			ProductClass prodCls2 = (ProductClass) prodClass.clone();
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

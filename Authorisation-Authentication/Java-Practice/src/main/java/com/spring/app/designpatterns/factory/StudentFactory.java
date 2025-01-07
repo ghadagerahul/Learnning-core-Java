@@ -1,0 +1,25 @@
+package com.spring.app.designpatterns.factory;
+
+import ch.qos.logback.core.util.StringUtil;
+import io.micrometer.common.util.StringUtils;
+
+public class StudentFactory {
+
+	public static Student getStudent(String type) {
+
+		if (type.equals("ARTS")) {
+			return new Arts();
+		}
+
+		if (type.equals("SCIENCE")) {
+			return new Science();
+		}
+
+		if (type.equals("COMMERCE")) {
+			return new Commerce();
+		}
+
+		return null;
+	}
+
+}

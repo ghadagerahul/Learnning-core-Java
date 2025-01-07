@@ -1,0 +1,9 @@
+package com.spring.app.designpatterns.abstractfactory2;
+
+public interface Cars {
+
+	private int milage;
+	private String name;
+	private String type;
+	
+}

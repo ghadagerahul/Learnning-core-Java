@@ -1,0 +1,62 @@
+package com.spring.app.collections;
+
+import java.util.Date;
+
+public class EmpEntity {
+
+	private int id;
+	private String name;
+	private String address;
+	private Integer mobuleNumber;
+	private Date dateOfBirth;
+
+	public EmpEntity(int id, String name, String address, Integer mobuleNumber, Date dateOfBirth) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.address = address;
+		this.mobuleNumber = mobuleNumber;
+		this.dateOfBirth = dateOfBirth;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public Integer getMobuleNumber() {
+		return mobuleNumber;
+	}
+
+	public void setMobuleNumber(Integer mobuleNumber) {
+		this.mobuleNumber = mobuleNumber;
+	}
+
+	public Date getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+	public void setDateOfBirth(Date dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+
+}

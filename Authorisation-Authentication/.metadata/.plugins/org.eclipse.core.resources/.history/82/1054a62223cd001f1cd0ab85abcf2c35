@@ -1,0 +1,12 @@
+package com.spring.app.designpatterns.behavioural.observer;
+
+public class ChannnelOwnerImpl implements ChannnelOwner {
+
+	@Override
+	public void sendNotification() {
+	
+		System.out.println("Got New Notification");
+
+	}
+
+}

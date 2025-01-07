@@ -1,0 +1,23 @@
+package com.spring.app.designpatterns.abstractfactory2;
+
+public class Audi implements Cars{
+
+	@Override
+	public int getmilage() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getCarTyoe() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getCarPice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,59 @@
+package com.spring.app.designpatterns.abstractfactory2;
+
+public class DriverClientClass {
+
+	public static void main(String[] args) {
+
+		String carType = "";
+		int carMilage = 0;
+		double carPrice = 0;
+
+		Cars car = CarFactory.getCarInfo(new BmwCarInfo());
+		carType = car.getCarTyoe();
+		carMilage = car.getmilage();
+		carPrice = car.getCarPice();
+
+		System.out.println("========== BMW INFO =========");
+		System.out.println("carType: " + carType);
+		System.out.println("carMilage: " + carMilage);
+		System.out.println("carPrice: " + carPrice);
+		System.out.println("");
+		System.out.println("");
+
+		Cars car1 = CarFactory.getCarInfo(new AudiCarInfo());
+		carType = car1.getCarTyoe();
+		carMilage = car1.getmilage();
+		carPrice = car1.getCarPice();
+
+		System.out.println("========== Audi INFO =========");
+		System.out.println("carType: " + carType);
+		System.out.println("carMilage: " + carMilage);
+		System.out.println("carPrice: " + carPrice);
+		System.out.println("");
+		System.out.println("");
+
+		Cars car2 = CarFactory.getCarInfo(new ToyatoCarInfo());
+		carType = car2.getCarTyoe();
+		carMilage = car2.getmilage();
+		carPrice = car2.getCarPice();
+		System.out.println("========== Toyato INFO =========");
+		System.out.println("carType: " + carType);
+		System.out.println("carMilage: " + carMilage);
+		System.out.println("carPrice: " + carPrice);
+		System.out.println("");
+		System.out.println("");
+
+		Cars car3 = CarFactory.getCarInfo(new MahindraCarInfo());
+		carType = car3.getCarTyoe();
+		carMilage = car3.getmilage();
+		carPrice = car3.getCarPice();
+		System.out.println("========== Mahindra INFO =========");
+		System.out.println("carType: " + carType);
+		System.out.println("carMilage: " + carMilage);
+		System.out.println("carPrice: " + carPrice);
+		System.out.println("");
+		System.out.println("");
+
+	}
+
+}

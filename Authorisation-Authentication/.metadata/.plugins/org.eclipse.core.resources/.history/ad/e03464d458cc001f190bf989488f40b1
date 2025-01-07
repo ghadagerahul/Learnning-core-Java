@@ -1,0 +1,11 @@
+package com.spring.app.designpatterns.prototype;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		
+		EntityClass entiry = new EntityClass();
+		
+	}
+}

@@ -1,0 +1,41 @@
+package com.spring.app.designpatterns.behavioural.observer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SubscriberImpl  implements Subscriber{
+
+	
+	List<ChannnelOwnerImpl> subscriber = new ArrayList<>();
+	
+	@Override
+	public void Subscription(ChannnelOwnerImpl owner) {
+		subscriber.add(owner);
+		
+	}
+
+	@Override
+	public void unsubscription() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sendNotification() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void unsubscription(ChannnelOwner owner) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sendNotification(ChannnelOwner owner) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

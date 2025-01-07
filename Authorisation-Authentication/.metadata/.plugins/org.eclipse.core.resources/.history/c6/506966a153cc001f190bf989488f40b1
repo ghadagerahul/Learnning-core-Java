@@ -1,0 +1,14 @@
+package com.spring.app.designpatterns.abstractfactory2;
+
+public class DriverClientClass {
+
+	public static void main(String[] args) {
+		
+		String carType="";
+		Cars car = CarFactory.getCarInfo(new BmwCarInfo());
+	 carType = car.getCarTyoe();
+		car.getmilage();
+		car.getCarPice();
+	}
+
+}

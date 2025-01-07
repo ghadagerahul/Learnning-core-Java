@@ -1,0 +1,9 @@
+package com.spring.app.designpatterns.abstractfactory2;
+
+public class CarFactory {
+
+	public static void getCarInfo() {
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.spring.app.designpatterns.factory;
+
+public class ClientClass {
+
+	public static void main(String[] args) {
+		
+		Student S1 = StudentFactory.getStudent("ARTS");
+		
+	}
+	
+}

@@ -1,0 +1,82 @@
+package com.spring.app.designpatterns.builder;
+
+public class CarsWorld {
+
+	private String carType;
+	private int milage;
+	private String range;
+	private double price;
+	private String engineType;
+
+	public String getCarType() {
+		return carType;
+	}
+
+	public int getMilage() {
+		return milage;
+	}
+
+	public String getRange() {
+		return range;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public String getEngineType() {
+		return engineType;
+	}
+
+	private CarsWorld(CarBuilder cars) {
+
+	}
+
+	@Override
+	public String toString() {
+		return "CarsWorld [carType=" + carType + ", milage=" + milage + ", range=" + range + ", price=" + price
+				+ ", engineType=" + engineType + "]";
+	}
+
+	static class CarBuilder {
+
+		private String carType;
+		private int milage;
+		private String range;
+		private double price;
+		private String engineType;
+
+		public void setCarType(String carType) {
+			this.carType = carType;
+		}
+
+		public void setMilage(int milage) {
+			this.milage = milage;
+		}
+
+		public void setRange(String range) {
+			this.range = range;
+		}
+
+		public void setPrice(double price) {
+			this.price = price;
+		}
+
+		public void setEngineType(String engineType) {
+			engineType = engineType;
+		}
+
+		public void build(CarBuilder build) {
+
+			this.carType = build.carType;
+			this.milage = build.milage;
+			this.range = build.range;
+			this.price = build.price;
+			this.engineType = build.engineType;
+			
+			new CarsWorld(this);
+		}
+
+	}
+
+}

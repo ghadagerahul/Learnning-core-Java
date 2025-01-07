@@ -1,0 +1,22 @@
+package com.spring.app.collections;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.List;
+
+public class Collections {
+
+	public static void main(String[] args) {
+
+		List<EmpEntity> empList = new ArrayList<>();
+
+		empList.add(new EmpEntity(1, "Rahul", "pune", Integer.parseInt("9370005745"), new Date("13-10-1999")));
+		empList.add(new EmpEntity(2, "Vishwas", "wakad", Integer.parseInt("9172018296"), new Date("18-07-1998")));
+		empList.add(new EmpEntity(3, "Avinash", "KarveNagar", Integer.parseInt("9408082807"), new Date("03-11-1996")));
+
+		Comparator<EmpEntity> emp = Comparator.comparing(EmpEntity::getId);
+
+	}
+
+}

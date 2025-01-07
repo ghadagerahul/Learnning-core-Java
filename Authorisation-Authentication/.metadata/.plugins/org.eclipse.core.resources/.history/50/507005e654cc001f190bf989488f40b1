@@ -1,0 +1,11 @@
+package com.spring.app.designpatterns.builder;
+
+public class CarsWorld {
+
+	private String carType;
+	private int milage;
+	private String range;
+	private double price;
+	private String EngineType;
+	
+}

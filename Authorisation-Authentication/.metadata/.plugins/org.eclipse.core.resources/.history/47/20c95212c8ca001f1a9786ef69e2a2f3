@@ -1,0 +1,9 @@
+package com.spring.app.designpatterns.abstractfactory;
+
+public interface Employee {
+
+	int salary();
+	
+	String name();
+	
+}

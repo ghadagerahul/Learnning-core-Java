@@ -1,0 +1,10 @@
+package com.spring.app.designpatterns.abstractfactory;
+
+public class DeveloperAbstractFactory extends EmployeeAbstractFactory {
+
+	@Override
+	public Employee createEmployeeObject() {
+		return new Developer();
+	}
+
+}

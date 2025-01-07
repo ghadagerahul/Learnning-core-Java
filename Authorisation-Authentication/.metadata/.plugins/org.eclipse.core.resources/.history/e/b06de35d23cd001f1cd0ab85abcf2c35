@@ -1,0 +1,14 @@
+package com.spring.app.designpatterns.behavioural.observer;
+
+import java.nio.channels.Channel;
+
+public class MainClass {
+
+	
+public static void main(String[] args) {
+	
+	
+	
+	
+}
+}

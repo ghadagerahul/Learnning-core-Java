@@ -1,0 +1,11 @@
+package com.spring.app.designpatterns.abstractfactory2;
+
+public class AudiCarInfo implements CarAbstractFactory {
+
+	@Override
+	public Cars getcars() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

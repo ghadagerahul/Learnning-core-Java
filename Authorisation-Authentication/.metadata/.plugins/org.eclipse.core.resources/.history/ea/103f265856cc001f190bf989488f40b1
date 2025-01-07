@@ -1,0 +1,26 @@
+package com.spring.app.designpatterns.builder;
+
+public class WorldMainClass {
+
+	public static void main(String[] args) {
+
+		// builder1
+		World worldDemo = new World.WorldBuilder().setId(1).setName("BUILDER1").setAddress("PUNE")
+				.setEmail("ABC@BBBC.COM").build();
+
+		System.out.println("worldDemo: " + worldDemo);
+
+		// builder 2
+		World worldDemo2 = new World.WorldBuilder().setId(2).setName("BUILDER2").setEmail("AAA@BBBB.COM").build();
+
+		System.out.println("worldDemo2: " + worldDemo2);
+
+		
+		
+		
+	  carWorld = new CarsWorld.CarBuilder().setCarType("SPORT").setRange("30-35").setEngineType("VDI").setMilage(25).setPrice(750000).build();;
+		
+		
+	}
+
+}

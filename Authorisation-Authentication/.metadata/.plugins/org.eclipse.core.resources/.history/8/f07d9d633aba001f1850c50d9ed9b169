@@ -1,0 +1,14 @@
+package com.spring.app.collections;
+
+import java.util.Date;
+
+public class EmpEntity {
+
+	private int id;
+	private String name;
+	private String address;
+	private Integer mobuleNumber;
+private Date dateOfBirth;
+	
+	
+}

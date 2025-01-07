@@ -1,0 +1,17 @@
+package com.spring.app.collections;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class Collections {
+
+	public static void main(String[] args) {
+
+		List<EmpEntity> empList = new ArrayList<>();
+
+		empList.add(new EmpEntity(1,"Rahul", "pune", 9370005745, new Date()));
+		
+	}
+
+}

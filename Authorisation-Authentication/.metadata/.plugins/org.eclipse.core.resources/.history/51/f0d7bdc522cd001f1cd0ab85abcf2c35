@@ -1,0 +1,13 @@
+package com.spring.app.designpatterns.behavioural.observer;
+
+import java.util.concurrent.Flow.Subscription;
+
+public interface Subscriber {
+
+	void Subscription( ChannnelOwner owner);
+	
+	void unsubscription( ChannnelOwner owner);
+	
+	void sendNotification( ChannnelOwner owner);
+	
+}

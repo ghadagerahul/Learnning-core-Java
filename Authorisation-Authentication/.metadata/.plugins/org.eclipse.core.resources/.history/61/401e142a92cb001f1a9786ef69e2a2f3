@@ -1,0 +1,14 @@
+package com.spring.app.designpatterns.builder;
+
+public class WorldMainClass {
+
+	public static void main(String[] args) {
+
+		World worldDemo = new World.WorldBuilder().setId(1).setName("BUILDER1").setAddress("PUNE")
+				.setEmail("ABC@BBBC.COM").build();
+		
+		System.out.println("worldDemo: "+worldDemo);
+
+	}
+
+}

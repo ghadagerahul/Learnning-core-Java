@@ -1,0 +1,19 @@
+package com.spring.app.designpatterns.prototype;
+
+public class MainClass {
+
+	EntityClass entityClass = new EntityClass();
+	
+	String customerProduct;
+	boolean isAdditionalDetails;
+	boolean isDemongVariations;
+	
+	if(null!=customerProduct&&customerProduct.isDemogVariations())
+	{
+
+		if (null != customerProduct && customerProduct.isAdditionalDetails())
+			isAdditionalDetails = true;
+		isDemongVariations = true;
+	}
+	
+}
